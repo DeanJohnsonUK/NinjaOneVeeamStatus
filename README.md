@@ -14,8 +14,6 @@ A PowerShell discovery script that generates a rich, styled HTML status report f
   <em>Example of the generated HTML report as it appears in a NinjaOne WYSIWYG custom field</em>
 </p>
 
-> **Tip:** filenames with square brackets (like `example[1].jpg`) need to be URL-encoded in Markdown (`%5B` / `%5D`) to render reliably everywhere. If you'd rather avoid that, simply rename the file to something like `images/example-output.jpg` and update the path above — GitHub, most editors, and static site generators are all happier without brackets in image filenames.
-
 ## Overview
 
 This script runs locally on a Veeam Backup & Replication server, gathers license, service, repository, and job data via the Veeam PowerShell module, and renders it as a single HTML report. The report is pushed to a NinjaOne WYSIWYG custom field using `Set-NinjaProperty`, so the current backup posture is visible without opening the Veeam console.
